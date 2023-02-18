@@ -9,6 +9,16 @@ const messages = [
         user: "Throne",
         added: new Date(),
     },
+    {
+        text: "Destruction.",
+        user: "Sith",
+        added: new Date(),
+    },
+    {
+        text: "and creation.",
+        user: "Sidious",
+        added: new Date(),
+    },
 ];
 
 module.exports = messages;
