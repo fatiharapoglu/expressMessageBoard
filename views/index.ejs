@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fettan | expressChat</title>
+    </head>
+    <body>
+        <a href="/new">New message</a>
+        <ul>
+            <% for(const msg of messages) {%>
+            <li>
+                <div><sub><%=msg.added%></sub></div>
+                <div><strong><%=msg.user%></strong></div>
+                <%=msg.text%>
+            </li>
+            <% } %>
+        </ul>
+    </body>
+</html>
