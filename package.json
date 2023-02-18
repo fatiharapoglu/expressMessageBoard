@@ -1,0 +1,26 @@
+{
+    "name": "expressmessageboard",
+    "version": "1.0.0",
+    "description": "",
+    "scripts": {
+        "devStart": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/fatiharapoglu/expressMessageBoard.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/fatiharapoglu/expressMessageBoard/issues"
+    },
+    "homepage": "https://github.com/fatiharapoglu/expressMessageBoard#readme",
+    "devDependencies": {
+        "nodemon": "^2.0.20"
+    },
+    "dependencies": {
+        "ejs": "^3.1.8",
+        "express": "^4.18.2"
+    }
+}
