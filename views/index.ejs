@@ -5,17 +5,29 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Fettan | expressChat</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+            crossorigin="anonymous"
+        />
     </head>
-    <body>
-        <a href="/new">New message</a>
-        <ul>
+    <body class="container text-bg-light">
+        <h1 class="h1 text-center my-5">All Messages</h1>
+        <ul class="my-5 list-group">
             <% for(const msg of messages) {%>
-            <li>
-                <div><sub><%=msg.added%></sub></div>
-                <div><strong><%=msg.user%></strong></div>
-                <%=msg.text%>
+            <li class="list-group-item">
+                <div class="d-flex justify-content-between">
+                    <span class="fst-normal fw-bold"><%=msg.user%></span>
+                    <span class="fst-italic fw-lighter"
+                        ><%=msg.added.toLocaleDateString('en-us', { weekday:"long", year:"numeric",
+                        month:"short", day:"numeric"})%></span
+                    >
+                </div>
+                <span class="py-3 fs-5"><%=msg.text%></span>
             </li>
             <% } %>
         </ul>
+        <a href="/new" class="link-danger d-block text-center">New message <strong>+</strong></a>
     </body>
 </html>
