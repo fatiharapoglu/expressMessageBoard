@@ -3,7 +3,7 @@ const router = express.Router();
 const messages = require("../messages");
 
 router.get("/", (req, res) => {
-    res.render("form", {});
+    res.render("form");
 });
 
 router.post("/", (req, res) => {
