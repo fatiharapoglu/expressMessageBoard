@@ -1,7 +1,14 @@
-# Mini Message Board (Express)
+# Mini Message Board
 
-[The Odin Project](https://www.theodinproject.com/lessons/nodejs-mini-message-board)'s node path Express mini message board project.
+Simple message board created with **Express**.
 
-Created with Express and EJS.
+## Helper Dependencies
 
-![RPS](public/assets/readme.png)
+-   [EJS](https://ejs.co/) view template engine
+-   [dotenv](https://www.npmjs.com/package/dotenv) for processing .env files
+-   [serve-favicon](https://www.npmjs.com/package/serve-favicon) for serving favicon in servers
+-   [nodemon](https://nodemon.io/) for monitoring any changes and automatically restarting server
+
+## How It Looks
+
+![ss](./public/assets/readme.png)

@@ -1,31 +1,24 @@
 {
     "name": "expressmessageboard",
     "version": "1.0.0",
+    "author": "Fatih Arapoğlu",
+    "license": "MIT",
+    "description": "express",
+    "keywords": [],
     "engines": {
         "node": "18.12.1"
     },
-    "description": "",
     "scripts": {
-        "start": "nodemon server.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/fatiharapoglu/expressMessageBoard.git"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/fatiharapoglu/expressMessageBoard/issues"
-    },
-    "homepage": "https://github.com/fatiharapoglu/expressMessageBoard#readme",
-    "devDependencies": {
-        "nodemon": "^2.0.20"
+        "start": "node server.js",
+        "dev": "nodemon server.js"
     },
     "dependencies": {
         "dotenv": "^16.0.3",
         "ejs": "^3.1.8",
         "express": "^4.18.2",
         "serve-favicon": "^2.5.0"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.20"
     }
 }
